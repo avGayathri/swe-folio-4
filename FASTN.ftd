@@ -7,13 +7,11 @@ favicon: /-/avgayathri.github.io/swe-folio-4/favicon.ico
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 -- fastn.dependency: fastn-community.github.io/dark-flame-cs
+-- fastn.dependency: shaheen-senpai.github.io/fira-code
 
 -- fastn.auto-import: avgayathri.github.io/swe-folio-4/FASTN/ds
 -- fastn.auto-import: avgayathri.github.io/swe-folio-4/assets
+-- fastn.auto-import: avgayathri.github.io/swe-folio-4/lib
 -- fastn.auto-import: doc-site
 
--- fastn.sitemap:
 
-# Home: index.html
-
-- Right Sidebar Sample: /sidebar/
