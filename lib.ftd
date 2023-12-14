@@ -1,0 +1,349 @@
+-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+
+
+-- component page-1: 
+string name:
+string role:
+
+-- ftd.column:
+width.fixed.vw: 32
+height: fill-container
+background.solid: #ffffff
+padding.vw: 1
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.image: $assets.files.assets.mainbg.jpeg
+padding.vw: 1
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: P O R T
+color: #000000
+role: $fira-code-size-60-700
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: F O L
+color: #000000
+role: $fira-code-size-60-700
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: I O
+color: #000000
+role: $fira-code-size-60-700
+
+-- end: ftd.column
+
+-- ftd.column:
+align-self: end
+spacing.fixed.vw: 0.2
+margin-top.vw: 14
+
+-- ftd.text: $page-1.name
+classes: animate-text
+css: [ $assets.files.style.style.css]
+role: $fira-code-size-20-400
+
+-- ftd.text: $page-1.role
+classes: animate-text
+css: [ $assets.files.style.style.css]
+role: $fira-code-size-20-400
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: page-1
+
+
+
+
+
+
+
+
+
+
+-- component page-2:
+string about-link:
+string work-link:
+string contact-link:
+string edu-link: 
+
+-- ftd.column:
+width.fixed.vw: 44
+height: fill-container
+background.solid: #ffffff
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.vw: 1
+padding.vw: 1.5
+wrap: true
+
+-- ftd.column:
+classes: zoom
+css: [ $assets.files.style.style.css]
+width.fixed.vw: 20
+height.fixed.vw: 14
+background.image: $assets.files.assets.image-2.jpg
+padding.vw: 1
+link: $page-2.about-link
+
+-- ftd.text: ABOUT ME
+role: $fira-code-size-24-400
+color: #000000
+
+-- end: ftd.column
+
+-- ftd.column:
+classes: zoom
+css: [ $assets.files.style.style.css]
+width.fixed.vw: 20
+height.fixed.vw: 14
+background.image: $assets.files.assets.image-3.jpg
+padding.vw: 1
+link: $page-2.work-link
+
+-- ftd.text: MY WORKS
+role: $fira-code-size-24-400
+color: #000000
+
+-- end: ftd.column
+
+-- ftd.column:
+classes: zoom
+css: [ $assets.files.style.style.css]
+width.fixed.vw: 20
+height.fixed.vw: 14
+background.image: $assets.files.assets.image-1.jpg
+padding.vw: 1
+link: $page-2.contact-link
+
+-- ftd.text: CONTACT ME
+role: $fira-code-size-24-400
+color: #000000
+
+-- end: ftd.column
+
+-- ftd.column:
+classes: zoom
+css: [ $assets.files.style.style.css]
+width.fixed.vw: 20
+height.fixed.vw: 14
+background.image: $assets.files.assets.image-4.jpg
+padding.vw: 1
+link: $page-2.edu-link
+
+-- ftd.text: EDUCATIONS
+role: $fira-code-size-24-400
+color: #000000
+
+-- end: ftd.column
+
+-- ftd.row: 
+width: fill-container
+height.fixed.vw: 4.5
+align-content: center
+
+-- ftd.text: inspire & be inspired
+role: $fira-code-size-24-400
+color: #000000
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: page-2
+
+
+
+
+
+
+
+-- component swe-folio-4:
+string name:
+string role:
+string about-link:
+string work-link:
+string contact-link:
+string edu-link: 
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+padding.vw: 2
+padding-horizontal.vw: 4
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+background.solid: #afadac
+spacing.fixed.vw: 4
+padding.vw: 2
+align-content: center
+
+-- page-1:
+name: $swe-folio-4.name
+role: $swe-folio-4.role
+
+
+-- page-2:
+about-link: $swe-folio-4.about-link
+work-link: $swe-folio-4.work-link
+contact-link: $swe-folio-4.contact-link
+edu-link: $swe-folio-4.edu-link
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: swe-folio-4
+
+
+
+
+
+-- ftd.type fira-code-size-60-desktop:
+size.px: 60
+weight: 700
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-48-mobile:
+size.px: 48
+weight: 700
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-60-700:
+desktop: $fira-code-size-60-desktop
+mobile: $fira-code-size-48-mobile
+
+
+
+
+
+
+-- ftd.type fira-code-size-50-desktop:
+size.px: 50
+weight: 500
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-36-mobile:
+size.px: 36
+weight: 500
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-50-400:
+desktop: $fira-code-size-50-desktop
+mobile: $fira-code-size-36-mobile
+
+
+
+
+
+
+-- ftd.type fira-code-size-24-desktop:
+size.px: 24
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-22-mobile:
+size.px: 22
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-24-400:
+desktop: $fira-code-size-24-desktop
+mobile: $fira-code-size-22-mobile
+
+
+
+
+
+-- ftd.type fira-code-size-20-desktop:
+size.px: 20
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-18-mobile:
+size.px: 18
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-20-400:
+desktop: $fira-code-size-20-desktop
+mobile: $fira-code-size-18-mobile
+
+
+
+
+
+
+-- ftd.type fira-code-size-38-desktop:
+size.px: 38
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-26-mobile:
+size.px: 26
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-38-400:
+desktop: $fira-code-size-38-desktop
+mobile: $fira-code-size-26-mobile
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-16-desktop:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-16-mobile:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-16-400:
+desktop: $fira-code-size-16-desktop
+mobile: $fira-code-size-16-mobile
+
+
+
+-- ftd.type fira-code-size-12-mobile:
+size.px: 12
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
