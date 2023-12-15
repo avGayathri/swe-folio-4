@@ -556,14 +556,18 @@ string work-link:
 
 -- ftd.column:
 width.fixed.vw: 24
-height.fixed.vw: 14
+height.fixed.vw: 16
 width.fixed.vw if {ftd.device == "mobile"}: 80
 height.fixed.vw if {ftd.device == "mobile"}: 40
+background.solid: #ffffff
+align-content: center
 
 
 -- ftd.image:
-width: fill-container
-height: fill-container
+classes: zoom
+css: [ $assets.files.style.style.css]
+width.fixed.vw: 24
+height.fixed.vw: 14
 fit if {ftd.device == "desktop"}: contain
 src: $works-comp.work
 link: $works-comp.work-link
