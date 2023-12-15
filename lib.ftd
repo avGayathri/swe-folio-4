@@ -6,6 +6,11 @@ string name:
 string role:
 
 -- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
 width.fixed.vw: 32
 height: fill-container
 background.solid: #ffffff
@@ -65,6 +70,65 @@ role: $fira-code-size-20-400
 
 -- end: ftd.column
 
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width.fixed.vw: 88
+height: fill-container
+background.solid: #ffffff
+padding.vw: 1
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.image: $assets.files.assets.mainbg.jpeg
+padding.vw: 1
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.row:
+width: fill-container
+
+-- ftd.text: P O R T 
+color: #000000
+role: $fira-code-size-60-700
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+
+-- ftd.text: F O L I O
+color: #000000
+role: $fira-code-size-60-700
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+align-self: end
+spacing.fixed.vw: 0.2
+margin-top.vw: 14
+
+-- ftd.text: $page-1.name
+classes: animate-text
+css: [ $assets.files.style.style.css]
+role: $fira-code-size-20-400
+
+-- ftd.text: $page-1.role
+classes: animate-text
+css: [ $assets.files.style.style.css]
+role: $fira-code-size-20-400
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
 -- end: page-1
 
 
@@ -83,6 +147,11 @@ string contact-link:
 string edu-link: 
 
 -- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
 width.fixed.vw: 44
 height: fill-container
 background.solid: #ffffff
@@ -165,6 +234,99 @@ color: #000000
 -- end: ftd.row
 
 -- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width.fixed.vw: 88
+height: fill-container
+background.solid: #ffffff
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.vw: 1
+padding.vw: 1.5
+wrap: true
+
+-- ftd.column:
+classes: zoom
+css: [ $assets.files.style.style.css]
+width.fixed.vw: 85
+height.fixed.vw: 18
+background.image: $assets.files.assets.image-2.jpg
+padding.vw: 1
+link: $page-2.about-link
+align-content: center
+
+-- ftd.text: ABOUT ME
+role: $fira-code-size-24-400
+color: #000000
+
+-- end: ftd.column
+
+-- ftd.column:
+classes: zoom
+css: [ $assets.files.style.style.css]
+width.fixed.vw: 85
+height.fixed.vw: 18
+background.image: $assets.files.assets.image-3.jpg
+padding.vw: 1
+link: $page-2.work-link
+align-content: center
+
+-- ftd.text: EDUCATIONS
+role: $fira-code-size-24-400
+color: #000000
+
+-- end: ftd.column
+
+-- ftd.column:
+classes: zoom
+css: [ $assets.files.style.style.css]
+width.fixed.vw: 85
+height.fixed.vw: 18
+background.image: $assets.files.assets.image-1.jpg
+padding.vw: 1
+link: $page-2.contact-link
+align-content: center
+
+-- ftd.text: MY WORKS
+role: $fira-code-size-24-400
+color: #000000
+
+-- end: ftd.column
+
+-- ftd.column:
+classes: zoom
+css: [ $assets.files.style.style.css]
+width.fixed.vw: 85
+height.fixed.vw: 18
+background.image: $assets.files.assets.image-4.jpg
+padding.vw: 1
+link: $page-2.edu-link
+align-content: center
+
+-- ftd.text: CONTACT ME
+role: $fira-code-size-24-400
+color: #000000
+
+-- end: ftd.column
+
+-- ftd.row: 
+width: fill-container
+height.fixed.vw: 14
+align-content: center
+
+-- ftd.text: inspire & be inspired
+role: $fira-code-size-24-400
+color: #000000
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -251,20 +413,21 @@ height: auto
 
 -- ftd.column:
 width: fill-container
-align-content: left
+align-content: center
 align-self: center
 margin-top.px: 20
 spacing.fixed.vw: 2
 
 -- ftd.text: ABOUT ME
 role: $fira-code-size-50-400
-color: #eb5939
+color: #000000
 
 
 -- ftd.text: $hero-1.content
 margin-bottom.px: 32
 role: $fira-code-size-20-400
-color: #b7ab98
+color: #0d0d0d
+text-align: center
 
 
 -- end: ftd.column
@@ -371,7 +534,7 @@ text-align: start
 -- ftd.row:
 if: { ftd.device == "mobile" }
 align-content: center
-background.solid: #0d0d0d
+background.solid: #ffffff
 padding-horizontal.vw: 2
 
 
@@ -379,14 +542,14 @@ padding-horizontal.vw: 2
 width.fixed.vw: 24
 height.fixed.vw: 24
 border-radius.percent: 50
-background.solid: #000000
-border-color: #eb5939
+background.solid: #afadac
+border-color: #000000
 border-width.px: 1
 align-content: center
 
 
 -- ftd.text: $timeline-comp.date
-color: #b7ab98
+color: #0d0d0d
 color if {timeline-comp.hover}: #000
 role: $fira-code-size-12-mobile
 text-align: center
@@ -395,14 +558,14 @@ text-align: center
 
 -- ftd.row:
 width.fixed.vw: 6
-border-color: #eb5939
+border-color: #000000
 border-width.px: 2
 
 -- end: ftd.row
 
 -- ftd.column:
 height.fixed.vw: 68
-border-color: #eb5939
+border-color: #000000
 border-left-width.px: 6
 
 -- end: ftd.column
@@ -412,26 +575,22 @@ width.fixed.vw: 53
 height.fixed.vw: 66
 padding.vw: 2
 margin-left.px: 8
+align-content: center
 
 
 -- ftd.text: $timeline-comp.degree
-color: #eb5939
-color if {timeline-comp.hover}: #000
+color: #0d0d0d
 role: $fira-code-size-22-mobile
-text-align: start
 padding-bottom.vw: 2
 
 -- ftd.text: $timeline-comp.specialization
-color: #b7ab98
-color if {timeline-comp.hover}: #000
+color: #0d0d0d
 role: $fira-code-size-16-mobile
-text-align: start
+
 
 -- ftd.text: $timeline-comp.institute
-color: #b7ab98
-color if {timeline-comp.hover}: #000
+color: #0d0d0d
 role: $fira-code-size-16-mobile
-text-align: start
 padding-bottom.vw: 1
 
 -- end: ftd.column
@@ -480,12 +639,14 @@ children: $timeline.child
 -- ftd.column:
 if: { ftd.device == "mobile" }
 width: fill-container
-spacing.fixed.vw: 12
+spacing.fixed.vw: 10
+margin-bottom.px: 20
+align-content: center
 
 
 -- ftd.text: EDUCATION
 role: $fira-code-size-50-400
-color: #eb5939
+color: #000000
 margin-left.px: 10
 
 
@@ -515,9 +676,13 @@ children w:
 
 -- ftd.column:
 width: fill-container
+height: fill-container
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
 background.solid: #afadac
 spacing.fixed.vw: 2
-margin-left.px if {ftd.device == "mobile"}: 10
 padding.vw: 4
 align-content: center
 margin-top.vw: 2
@@ -530,12 +695,36 @@ color: #000000
 -- ftd.row:
 width: fill-container
 spacing: space-between
-spacing.fixed.vw if {ftd.device == "mobile"}: 12
 wrap: true
 children: $works.w
 
 
 -- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+background.solid: #afadac
+spacing.fixed.vw: 2
+padding.vw: 4
+align-content: center
+margin-top.vw: 2
+
+-- ftd.text: MY WORKS
+role: $fira-code-size-50-400
+color: #000000
+
+
+-- ftd.column:
+spacing.fixed.vw: 8
+children: $works.w
+
+
+-- end: ftd.column
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -555,6 +744,11 @@ ftd.image-src work:
 string work-link:
 
 -- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
 width.fixed.vw: 24
 height.fixed.vw: 16
 width.fixed.vw if {ftd.device == "mobile"}: 80
@@ -571,6 +765,29 @@ height.fixed.vw: 14
 fit if {ftd.device == "desktop"}: contain
 src: $works-comp.work
 link: $works-comp.work-link
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width.fixed.vw: 24
+height.fixed.vw: 20
+width.fixed.vw if {ftd.device == "mobile"}: 80
+height.fixed.vw if {ftd.device == "mobile"}: 40
+background.solid: #ffffff
+align-content: center
+
+
+-- ftd.image:
+classes: zoom
+css: [ $assets.files.style.style.css]
+width.fixed.vw: 68
+height.fixed.vw: 32
+fit if {ftd.device == "desktop"}: contain
+src: $works-comp.work
+link: $works-comp.work-link
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -601,7 +818,6 @@ boolean $is-active-3: false
 -- ftd.column:
 width: fill-container
 height: fill-container
-background.solid: black
 margin-top.vw: 4
 
 -- ftd.column:
@@ -609,6 +825,7 @@ if: { ftd.device == "desktop" }
 width: fill-container
 background.solid: #afadac
 padding.vw: 4
+
 -- ftd.row:
 width: fill-container
 spacing.fixed.vw: 16
@@ -671,6 +888,69 @@ $on-mouse-leave$: $ftd.set-bool($a = $contact.is-active-3, v = false)
 
 -- end: ftd.column
 
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+background.solid: #afadac
+padding.vw: 4
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.vw: 10
+
+-- ftd.column:
+
+-- ftd.text: GET IN TOUCH
+color: #000000
+role: $fira-code-size-50-400
+
+-- ftd.text: $contact.email
+color: red
+role: $fira-code-size-22-mobile
+margin-top.vw: 4
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 82
+background.solid: #ffffff
+padding.vw: 4
+spacing.fixed.vw: 1
+
+-- ftd.text: **Social Links** 
+color: #000000
+role: $fira-code-size-24-400
+
+-- ftd.text: $contact.social-text-1 
+color: #000000
+role: $fira-code-size-22-mobile
+link: $contact.social-link-1 
+color if {contact.is-active-1}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $contact.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact.is-active-1, v = false)
+
+-- ftd.text: $contact.social-text-2
+color: #000000
+role: $fira-code-size-22-mobile
+link: $contact.social-link-2
+color if {contact.is-active-2}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $contact.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact.is-active-2, v = false)
+
+-- ftd.text: $contact.social-text-3 
+color: #000000
+role: $fira-code-size-22-mobile
+link: $contact.social-link-3
+color if {contact.is-active-3}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $contact.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact.is-active-3, v = false)
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
 -- end: ftd.column
 
 -- end: contact
@@ -698,6 +978,11 @@ height: fill-container
 -- ftd.column:
 width: fill-container
 height: fill-container
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: fill-container
 padding.vw: 2
 padding-horizontal.vw: 4
 
@@ -721,6 +1006,38 @@ contact-link: $swe-folio-4.contact-link
 edu-link: $swe-folio-4.edu-link
 
 -- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+height: fill-container
+padding.vw: 2
+padding-horizontal.vw: 4
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: #afadac
+spacing.fixed.vw: 4
+padding.vw: 2
+align-content: center
+
+-- page-1:
+name: $swe-folio-4.name
+role: $swe-folio-4.role
+
+
+-- page-2:
+about-link: $swe-folio-4.about-link
+work-link: $swe-folio-4.work-link
+contact-link: $swe-folio-4.contact-link
+edu-link: $swe-folio-4.edu-link
+
+-- end: ftd.column
+
+-- end: ftd.column
 
 -- end: ftd.column
 
@@ -777,6 +1094,27 @@ font-family: $fira-code-assets.fonts.Fira-Code
 -- ftd.responsive-type fira-code-size-50-400:
 desktop: $fira-code-size-50-desktop
 mobile: $fira-code-size-36-mobile
+
+
+
+
+
+
+-- ftd.type fira-code-size-20-desktop:
+size.px: 20
+weight: 500
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-36-mobile:
+size.px: 36
+weight: 500
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-20-500:
+desktop: $fira-code-size-20-desktop
+mobile: $fira-code-size-36-mobile
+
 
 
 

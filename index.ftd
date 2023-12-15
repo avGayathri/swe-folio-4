@@ -34,8 +34,8 @@ institute: lorem Ipsum Institute
 
 -- lib.timeline-comp:
 date: 2018
-degree: High School
-specialization: science
+degree: High School Degree
+specialization: computer science
 institute: lorem Ipsum Institute 
 
 -- end: lib.timeline
