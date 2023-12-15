@@ -117,7 +117,7 @@ background.image: $assets.files.assets.image-3.jpg
 padding.vw: 1
 link: $page-2.work-link
 
--- ftd.text: MY WORKS
+-- ftd.text: EDUCATIONS
 role: $fira-code-size-24-400
 color: #000000
 
@@ -132,7 +132,7 @@ background.image: $assets.files.assets.image-1.jpg
 padding.vw: 1
 link: $page-2.contact-link
 
--- ftd.text: CONTACT ME
+-- ftd.text: MY WORKS
 role: $fira-code-size-24-400
 color: #000000
 
@@ -147,7 +147,7 @@ background.image: $assets.files.assets.image-4.jpg
 padding.vw: 1
 link: $page-2.edu-link
 
--- ftd.text: EDUCATIONS
+-- ftd.text: CONTACT ME
 role: $fira-code-size-24-400
 color: #000000
 
@@ -176,7 +176,510 @@ color: #000000
 
 
 
+
+
+
+-- component hero-1:
+ftd.image-src cover:
+body content:
+
+
+-- ftd.column:
+padding-vertical.vw: 3
+id: hero-1
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+width.fixed.vw: 92 
+height: fill-container
+background.solid: #afadac
+spacing.fixed.vw: 10
+padding.vw: 2
+align-content: center
+
+-- ftd.column:
+width.fixed.vw: 26
+height.fixed.vw: 22
+background.solid: #ffffff
+align-content: center
+
+-- ftd.image:
+src: $hero-1.cover   
+width.fixed.vw: 24
+height.fixed.vw: 20  
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 40
+height.fixed.vw: 22
+background.solid: #ffffff
+align-content: center
+padding.vw: 1
+
+-- ftd.text: ABOUT ME
+margin-bottom.px: 16
+role: $fira-code-size-50-400
+color: #000000
+
+-- ftd.text: $hero-1.content
+margin-bottom.px: 32
+role: $fira-code-size-24-400
+color: #0d0d0d
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 10
+padding-vertical.px: 20
+background.solid: #afadac
+
+-- ftd.image:
+src: $hero-1.cover   
+width.fixed.percent: 100
+height: auto 
+
+
+-- ftd.column:
+width: fill-container
+align-content: left
+align-self: center
+margin-top.px: 20
+spacing.fixed.vw: 2
+
+-- ftd.text: ABOUT ME
+role: $fira-code-size-50-400
+color: #eb5939
+
+
+-- ftd.text: $hero-1.content
+margin-bottom.px: 32
+role: $fira-code-size-20-400
+color: #b7ab98
+
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+
+-- end: ftd.column
+
+-- end: hero-1
+
+
+
+
+
+
+
+
+
+
+-- component timeline-comp:
+string date:
+string degree:
+string specialization:
+string institute:
+boolean $hover: false
+
+-- ftd.row:
+width: fill-container
+align-content: center 
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+align-content: center
+background.solid: #ffffff
+padding-horizontal.vw: 2
+
+-- ftd.column:
+width.fixed.vw: 8
+height.fixed.vw: 8
+border-radius.percent: 50
+background.solid: #afadac
+border-color: #afadac
+border-width.px: 1
+padding.px: 8
+align-content: center
+
+-- ftd.text: $timeline-comp.date
+color: #0d0d0d
+color if {timeline-comp.hover}: #000
+role: $fira-code-size-24-400
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.row:
+width.fixed.vw: 6
+border-color: #000000
+border-width.px: 2
+
+-- end: ftd.row
+
+-- ftd.column:
+height.fixed.vw: 20
+border-color: #000000
+border-left-width.px: 8
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 24
+border-color: #000000
+border-width.px: 1
+border-top-left-radius.px: 24
+border-bottom-right-radius.px: 24
+background.solid: #afadac
+padding.vw: 2
+margin-left.px: 20
+
+
+-- ftd.text: $timeline-comp.degree
+color: #0d0d0d
+color if {timeline-comp.hover}: #000
+role: $fira-code-size-24-400
+text-align: start
+margin-bottom.vw: 1
+
+-- ftd.text: $timeline-comp.specialization
+color: #0d0d0d
+color if {timeline-comp.hover}: #000
+role: $fira-code-size-24-400
+text-align: start
+
+-- ftd.text: $timeline-comp.institute
+color: #0d0d0d
+color if {timeline-comp.hover}: #000
+role: $fira-code-size-24-400
+text-align: start
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.row:
+if: { ftd.device == "mobile" }
+align-content: center
+background.solid: #0d0d0d
+padding-horizontal.vw: 2
+
+
+-- ftd.column:
+width.fixed.vw: 24
+height.fixed.vw: 24
+border-radius.percent: 50
+background.solid: #000000
+border-color: #eb5939
+border-width.px: 1
+align-content: center
+
+
+-- ftd.text: $timeline-comp.date
+color: #b7ab98
+color if {timeline-comp.hover}: #000
+role: $fira-code-size-12-mobile
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.row:
+width.fixed.vw: 6
+border-color: #eb5939
+border-width.px: 2
+
+-- end: ftd.row
+
+-- ftd.column:
+height.fixed.vw: 68
+border-color: #eb5939
+border-left-width.px: 6
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 53
+height.fixed.vw: 66
+padding.vw: 2
+margin-left.px: 8
+
+
+-- ftd.text: $timeline-comp.degree
+color: #eb5939
+color if {timeline-comp.hover}: #000
+role: $fira-code-size-22-mobile
+text-align: start
+padding-bottom.vw: 2
+
+-- ftd.text: $timeline-comp.specialization
+color: #b7ab98
+color if {timeline-comp.hover}: #000
+role: $fira-code-size-16-mobile
+text-align: start
+
+-- ftd.text: $timeline-comp.institute
+color: #b7ab98
+color if {timeline-comp.hover}: #000
+role: $fira-code-size-16-mobile
+text-align: start
+padding-bottom.vw: 1
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: timeline-comp
+
+
+
+
+
+
+
+
+
+
+-- component timeline:
+children child:
+
+-- ftd.column:
+width: fill-container
+id: timeline
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+spacing.fixed.vw: 2
+
+
+-- ftd.text: EDUCATION
+role: $fira-code-size-50-400
+color: #000000
+
+
+-- ftd.column:
+width: fill-container
+children: $timeline.child
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+spacing.fixed.vw: 12
+
+
+-- ftd.text: EDUCATION
+role: $fira-code-size-50-400
+color: #eb5939
+margin-left.px: 10
+
+
+-- ftd.column:
+width: fill-container
+children: $timeline.child
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: timeline
+
+
+
+
+
+
+
+
+
+
+-- component works:
+children w:  
+
+-- ftd.column:
+width: fill-container
+background.solid: #afadac
+spacing.fixed.vw: 2
+margin-left.px if {ftd.device == "mobile"}: 10
+padding.vw: 4
+align-content: center
+margin-top.vw: 2
+
+-- ftd.text: MY WORKS
+role: $fira-code-size-50-400
+color: #000000
+
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+spacing.fixed.vw if {ftd.device == "mobile"}: 12
+wrap: true
+children: $works.w
+
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: works
+
+
+
+
+
+
+
+
+
+
+-- component works-comp:
+ftd.image-src work:
+string work-link:
+
+-- ftd.column:
+width.fixed.vw: 24
+height.fixed.vw: 14
+width.fixed.vw if {ftd.device == "mobile"}: 80
+height.fixed.vw if {ftd.device == "mobile"}: 40
+
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+fit if {ftd.device == "desktop"}: contain
+src: $works-comp.work
+link: $works-comp.work-link
+
+-- end: ftd.column
+
+-- end: works-comp
+
+
+
+
+
+
+
+
+
+
+-- component contact:
+string email:
+string social-text-1:
+string social-text-2:
+string social-text-3:
+string social-link-1:
+string social-link-2:
+string social-link-3:
+boolean $is-active-1: false
+boolean $is-active-2: false
+boolean $is-active-3: false
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: black
+margin-top.vw: 4
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+background.solid: #afadac
+padding.vw: 4
+-- ftd.row:
+width: fill-container
+spacing.fixed.vw: 16
+
+-- ftd.column:
+
+-- ftd.text: GET IN 
+color: #000000
+role: $fira-code-size-50-400
+
+-- ftd.text: TOUCH
+color: #000000
+role: $fira-code-size-50-400
+margin-left.px: 80
+
+-- ftd.text: $contact.email
+color: red
+role: $fira-code-size-22-mobile
+margin-left.px: 120
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 32
+background.solid: #ffffff
+padding.vw: 1
+spacing.fixed.vw: 0.5
+
+-- ftd.text: **Social Links** 
+color: #000000
+role: $fira-code-size-24-400
+
+-- ftd.text: $contact.social-text-1 
+color: #000000
+role: $fira-code-size-22-mobile
+link: $contact.social-link-1 
+color if {contact.is-active-1}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $contact.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact.is-active-1, v = false)
+
+-- ftd.text: $contact.social-text-2
+color: #000000
+role: $fira-code-size-22-mobile
+link: $contact.social-link-2
+color if {contact.is-active-2}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $contact.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact.is-active-2, v = false)
+
+-- ftd.text: $contact.social-text-3 
+color: #000000
+role: $fira-code-size-22-mobile
+link: $contact.social-link-3
+color if {contact.is-active-3}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $contact.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact.is-active-3, v = false)
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: contact
+
+
+
+
+
+
+
+
 -- component swe-folio-4:
+children c:
 string name:
 string role:
 string about-link:
@@ -214,6 +717,17 @@ contact-link: $swe-folio-4.contact-link
 edu-link: $swe-folio-4.edu-link
 
 -- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+padding.vw: 2
+padding-horizontal.vw: 4
+children: $swe-folio-4.c
+
+
 
 -- end: ftd.column
 

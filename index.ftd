@@ -10,4 +10,61 @@ work-link: https://www.linkedin.com/
 contact-link: https://www.linkedin.com/
 edu-link: https://www.linkedin.com/
 
+-- lib.hero-1: 
+cover: $assets.files.assets.propic.jpeg
+
+A senior full-stack developer with over 10 years of experience and a history of leading the development of quality e-commerce web applications and products.
+A strong history of building and mentoring high-performance web development teams. 
+
+
+-- lib.timeline:
+
+
+-- lib.timeline-comp:
+date:  2023
+degree: Master's Degree
+specialization: M.S computer science
+institute: lorem Ipsum Institute 
+
+-- lib.timeline-comp:
+date: 2021
+degree: Bachelor's Degree
+specialization: B.E computer science
+institute: lorem Ipsum Institute
+
+-- lib.timeline-comp:
+date: 2018
+degree: High School
+specialization: science
+institute: lorem Ipsum Institute 
+
+-- end: lib.timeline
+
+-- lib.works:
+
+-- lib.works-comp:
+work: $assets.files.assets.image-1.jpg
+work-link: https://trizui.trizwit.com/
+
+-- lib.works-comp:
+work: $assets.files.assets.image-2.jpg
+work-link: https://trizui.trizwit.com/
+
+-- lib.works-comp:
+work: $assets.files.assets.image-3.jpg
+work-link: https://trizui.trizwit.com/
+
+-- end: lib.works
+
+-- lib.contact:
+email: abc123@gmail.com
+social-text-1: Linkedin
+social-text-2: Github
+social-text-3: Twitter
+social-link-1: https://www.linkedin.com/
+social-link-2: https://github.com/
+social-link-3: https://twitter.com/
+
+-- end: lib.swe-folio-4
+
 -- end: ftd.column
