@@ -7,7 +7,6 @@ string role:
 
 -- ftd.column:
 width: fill-container
-height: fill-container
 
 -- ftd.column:
 if: { ftd.device == "desktop" }
@@ -148,7 +147,6 @@ string edu-link:
 
 -- ftd.column:
 width: fill-container
-height: fill-container
 
 -- ftd.column:
 if: { ftd.device == "desktop" }
@@ -184,7 +182,7 @@ width.fixed.vw: 20
 height.fixed.vw: 14
 background.image: $assets.files.assets.image-3.jpg
 padding.vw: 1
-link: $page-2.work-link
+link: $page-2.edu-link
 
 -- ftd.text: EDUCATIONS
 role: $fira-code-size-24-400
@@ -199,7 +197,7 @@ width.fixed.vw: 20
 height.fixed.vw: 14
 background.image: $assets.files.assets.image-1.jpg
 padding.vw: 1
-link: $page-2.contact-link
+link: $page-2.work-link
 
 -- ftd.text: MY WORKS
 role: $fira-code-size-24-400
@@ -214,7 +212,7 @@ width.fixed.vw: 20
 height.fixed.vw: 14
 background.image: $assets.files.assets.image-4.jpg
 padding.vw: 1
-link: $page-2.edu-link
+link: $page-2.contact-link
 
 -- ftd.text: CONTACT ME
 role: $fira-code-size-24-400
@@ -272,7 +270,7 @@ width.fixed.vw: 85
 height.fixed.vw: 18
 background.image: $assets.files.assets.image-3.jpg
 padding.vw: 1
-link: $page-2.work-link
+link: $page-2.edu-link
 align-content: center
 
 -- ftd.text: EDUCATIONS
@@ -288,7 +286,7 @@ width.fixed.vw: 85
 height.fixed.vw: 18
 background.image: $assets.files.assets.image-1.jpg
 padding.vw: 1
-link: $page-2.contact-link
+link: $page-2.work-link
 align-content: center
 
 -- ftd.text: MY WORKS
@@ -304,7 +302,7 @@ width.fixed.vw: 85
 height.fixed.vw: 18
 background.image: $assets.files.assets.image-4.jpg
 padding.vw: 1
-link: $page-2.edu-link
+link: $page-2.contact-link
 align-content: center
 
 -- ftd.text: CONTACT ME
@@ -348,7 +346,7 @@ body content:
 
 -- ftd.column:
 padding-vertical.vw: 3
-id: hero-1
+id: about
 
 -- ftd.row:
 if: { ftd.device == "desktop" }
@@ -615,7 +613,7 @@ children child:
 
 -- ftd.column:
 width: fill-container
-id: timeline
+id: edu
 
 -- ftd.column:
 if: { ftd.device == "desktop" }
@@ -676,7 +674,7 @@ children w:
 
 -- ftd.column:
 width: fill-container
-height: fill-container
+id: works
 
 -- ftd.column:
 if: { ftd.device == "desktop" }
@@ -693,9 +691,8 @@ color: #000000
 
 
 -- ftd.row:
-width: fill-container
 spacing: space-between
-wrap: true
+width: fill-container
 children: $works.w
 
 
@@ -745,14 +742,11 @@ string work-link:
 
 -- ftd.column:
 width: fill-container
-height: fill-container
 
 -- ftd.column:
 if: { ftd.device == "desktop" }
 width.fixed.vw: 24
 height.fixed.vw: 16
-width.fixed.vw if {ftd.device == "mobile"}: 80
-height.fixed.vw if {ftd.device == "mobile"}: 40
 background.solid: #ffffff
 align-content: center
 
@@ -816,6 +810,7 @@ boolean $is-active-3: false
 
 
 -- ftd.column:
+id: contact
 width: fill-container
 height: fill-container
 margin-top.vw: 4
@@ -977,18 +972,15 @@ height: fill-container
 
 -- ftd.column:
 width: fill-container
-height: fill-container
 
 -- ftd.column:
 if: { ftd.device == "desktop" }
 width: fill-container
-height: fill-container
 padding.vw: 2
 padding-horizontal.vw: 4
 
 -- ftd.row:
 width: fill-container
-height: fill-container
 background.solid: #afadac
 spacing.fixed.vw: 4
 padding.vw: 2

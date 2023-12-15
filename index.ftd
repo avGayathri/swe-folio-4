@@ -5,10 +5,11 @@ height: fill-container
 -- lib.swe-folio-4:
 name: DAVID WILLIAMS
 role: FULLSTACK DEVELOPER
-about-link: https://www.linkedin.com/
-work-link: https://www.linkedin.com/
-contact-link: https://www.linkedin.com/
-edu-link: https://www.linkedin.com/
+about-link: index.html#about
+edu-link: index.html#edu
+work-link: index.html#works
+contact-link: index.html#contact
+
 
 -- lib.hero-1: 
 cover: $assets.files.assets.propic.jpeg
